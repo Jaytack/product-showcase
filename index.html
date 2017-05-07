@@ -4,163 +4,171 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YummySearch</title>
+    <title>Yummy Search</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,900">
-    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top"　id="top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand navbar-link" href="#"> <img src="assets/img/ys-logo.png" id="logo"></a>
-                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <!-- stop logo link <a class="navbar-brand navbar-link" href="#top">--> 
+                <img src="assets/img/ys-logo.png"> 
+                <!-- </a>-->
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1">
+                    <span class="sr-only">Toggle navigation</span>     
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active" role="presentation"><a href="#">About </a></li>
-                    <li role="presentation"><a href="#">Features </a></li>
-                    <li role="presentation"><a href="#">Screenshots </a></li>
-                    <li role="presentation"><a href="#">Reiews </a></li>
-                    <li role="presentation"><a href="#">Contact </a></li>
+                    <li role="presentation"><a href="#feature">Features </a></li>
+                    <li role="presentation"><a href="#screenshots">Screenshots </a></li>
+                    <li role="presentation"><a href="#reviews">Reiews </a></li>
+                    <li role="presentation"><a href="#footer">Contact </a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div id="about">
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <div class="jumbotron">
-                    <h1>Let’s EASILY search for yummy food near you! </h1>
-                    <p><a class="btn btn-default" role="button" href="#"><strong>DOWNLOAD NOW!</strong> </a><a class="btn btn-default" role="button" href="#"><strong>LEARN MORE!</strong> </a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container site-section" id="feature">
-        <h1>Easy Features </h1>
-        <p><strong>Yummy Search</strong> is a tool that enables&nbsp; you to easily search, get info, order, pay and review food trucks near you. Here are four major features that Yummy Search can do! </p>
-        <div class="row">
-            <div class="col-md-3 item">
-                <h2><strong>Search</strong> </h2><img src="assets/img/search_icon.png">
-                <p>You can search truck on map by entering zip code, address, keywords, or by your current location. You can see food trucks on the map view or list view. </p>
-            </div>
-            <div class="col-md-3 item">
-                <h2><strong>Overview</strong> </h2><img src="assets/img/overview_icon.png">
-                <p>You can click to open detailed food truck information including menus and reviews. You can also make a call or share to your firiends. </p>
-            </div>
-            <div class="col-md-3 item">
-                <h2><strong>Order</strong> </h2><img src="assets/img/order_Icon.png">
-                <p>From the menu, you can see full items with picture and price. From there, you can easily select your favorite foods to make a order to pick up later. </p>
-            </div>
-            <div class="col-md-3 item">
-                <h2><strong>Pay</strong> </h2><img src="assets/img/pay_icon.png">
-                <p>You can choose to pay by credit card, Apple Pay or cash. Yummy Search can remember your information so that you can pay easily the next time you use it. </p>
-            </div>
-        </div>
-    </div>
-    <div class="container site-section" id="screenshots">
-        <h1>App Screenshots </h1>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="thumbnail">
-                    <a href="assets/img/map_mock-2.png" target="_blank"><img class="img-responsive" src="assets/img/map_mock-1.png"></a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="thumbnail">
-                    <a href="assets/img/about_mock-2.png" target="_blank"><img class="img-responsive" src="assets/img/about_mock-1.png"></a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="thumbnail">
-                    <a href="assets/img/menu_mock-2.png" target="_blank"><img class="img-responsive" src="assets/img/menu_mock-1.png"></a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="thumbnail">
-                    <a href="assets/img/thanks_mock-2.png" target="_blank"><img class="img-responsive" src="assets/img/thanks_mock-1.png"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container site-section" id="reviews">
-        <h1>User Reviews </h1>
-        <div class="review-section">
+    <div id="content">
+        <div id="about">
             <div class="row">
-                <div class="col-md-6 item"><img src="assets/img/alicebrown.png">
-                    <div class="quote">
-                        <p>I love how easy it is to find food trucks near me. </p>
-                        <p class="review_by"><strong>- Alice Brown</strong> </p>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="jumbotron">
+                        <h1>Let’s EASILY search for yummy food near you! </h1>
+                        <p><a class="btn btn-default" role="button" href="#"><strong>DOWNLOAD NOW!</strong> </a><a class="btn btn-default" role="button" href="#feature"><strong>LEARN MORE!</strong> </a></p>
                     </div>
                 </div>
-                <div class="col-md-6 item"><img src="assets/img/rickcandy.png">
-                    <div class="quote">
-                        <p>I love how easy it is to find food trucks near me. </p>
-                        <p class="review_by"><strong>- Alice Brown</strong> </p>
+            </div>
+        </div>
+        <div class="container site-section" id="feature">
+            <h1> Easy <span>Features </span></h1>
+            <p><strong>Yummy Search</strong> is a tool that enables&nbsp; you to easily search, get info, order, pay and review food trucks near you. Here are four major features that Yummy Search can do! </p>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 item">
+                    <h2><strong>Search</strong> </h2><img src="assets/img/search_icon.png">
+                    <p>You can search truck on map by entering zip code, address, keywords, or by your current location. You can see food trucks on the map view or list view </p>
+                </div>
+                <div class="col-md-3 col-sm-6 item">
+                    <h2><strong>Overview</strong> </h2><img src="assets/img/overview_icon.png">
+                    <p>You can click to open detailed food truck information including menus and reviews. You can also make a call or share to your firiends. </p>
+                </div>
+                <div class="col-md-3 col-sm-6 item">
+                    <h2><strong>Order</strong> </h2><img src="assets/img/order_Icon.png">
+                    <p>From the menu, you can see full items with picture and price. From there, you can easily select your favorite foods to make a order to pick up later. </p>
+                </div>
+                <div class="col-md-3 col-sm-6 item">
+                    <h2><strong>Pay</strong> </h2><img src="assets/img/pay_icon.png">
+                    <p>You can choose to pay by credit card, Apple Pay or cash. Yummy Search can remember your information so that you can pay easily the next time you use it. </p>
+                </div>
+            </div>
+        </div>
+        <div class="container site-section" id="screenshots">
+            <h1>App <span>Screenshots </span></h1>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                        <a href="assets/img/map_mock-2.png" target="_blank"><img class="img-responsive" src="assets/img/map_mock-1.png"></a>
                     </div>
                 </div>
-                <div class="col-md-6 item"><img src="assets/img/patricklee.png">
-                    <div class="quote">
-                        <p>I love how easy it is to find food trucks near me. </p>
-                        <p class="review_by"><strong>- Alice Brown</strong> </p>
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                        <a href="assets/img/about_mock-2.png" target="_blank"><img class="img-responsive" src="assets/img/about_mock-1.png"></a>
                     </div>
                 </div>
-                <div class="col-md-6 item"><img src="assets/img/lisacastine.png">
-                    <div class="quote">
-                        <p>I love how easy it is to find food trucks near me. </p>
-                        <p class="review_by"><strong>- Alice Brown</strong> </p>
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                        <a href="assets/img/menu_mock-2.png" target="_blank"><img class="img-responsive" src="assets/img/menu_mock-1.png"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                        <a href="assets/img/thanks_mock-2.png" target="_blank"><img class="img-responsive" src="assets/img/thanks_mock-1.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container site-section" id="reviews">
+            <h1>User <span>Reviews </span></h1>
+            <div class="review-section">
+                <div class="row">
+                    <div class="col-md-6 item"><img src="assets/img/alicebrown.png">
+                        <div class="quote">
+                            <p>I love how easy it is to find food trucks near me. </p>
+                            <p class="review_by"><strong>- Alice Brown</strong> </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 item"><img src="assets/img/rickcandy.png">
+                        <div class="quote">
+                            <p>I love how easy it is to find food trucks near me. </p>
+                            <p class="review_by"><strong>- Alice Brown</strong> </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 item"><img src="assets/img/patricklee.png">
+                        <div class="quote">
+                            <p>I love how easy it is to find food trucks near me. </p>
+                            <p class="review_by"><strong>- Alice Brown</strong> </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 item"><img src="assets/img/lisacastine.png">
+                        <div class="quote">
+                            <p>I love how easy it is to find food trucks near me. </p>
+                            <p class="review_by"><strong>- Alice Brown</strong> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container galley-section" id="gallery">
+            <div class="row o-3column">
+                <div class="col-md-4 col-sm-6">
+                    <div class="thumbnail">
+                        <a href="assets/img/french_fries.png" target="_blank"><img class="img-responsive" src="assets/img/french_fries.png"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="thumbnail">
+                        <a href="assets/img/pasta_salad.png" target="_blank"><img class="img-responsive" src="assets/img/pasta_salad.png"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="thumbnail">
+                        <a href="assets/img/yellow_food_truck.png" target="_blank"><img class="img-responsive" src="assets/img/yellow_food_truck.png"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="thumbnail">
+                        <a href="assets/img/black_sandwitch.png" target="_blank"><img class="img-responsive" src="assets/img/black_sandwitch.png"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="thumbnail">
+                        <a href="assets/img/ginger-ale.png" target="_blank"><img class="img-responsive" src="assets/img/ginger-ale.png"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="thumbnail">
+                        <a href="assets/img/desert.png" target="_blank"><img class="img-responsive" src="assets/img/desert.png"></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container galley-section" id="gallery">
-        <div class="row o-3column">
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="assets/img/french_fries.png" target="_blank"><img class="img-responsive" src="assets/img/french_fries.png"></a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="assets/img/pasta_salad.png" target="_blank"><img class="img-responsive" src="assets/img/pasta_salad.png"></a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="assets/img/yellow_food_truck.png" target="_blank"><img class="img-responsive" src="assets/img/yellow_food_truck.png"></a>
-                </div>
-            </div>
-        </div>
-        <div class="row o-3column">
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="assets/img/black_sandwitch.png" target="_blank"><img class="img-responsive" src="assets/img/black_sandwitch.png"></a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="assets/img/ginger-ale.png" target="_blank"><img class="img-responsive" src="assets/img/ginger-ale.png"></a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="assets/img/desert.png" target="_blank"><img class="img-responsive" src="assets/img/desert.png"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-clean">
+    
+    <p id="pageTop"><a href="#"><i class="fa fa-chevron-up"></i></a></p>
+    
+    <div id="footer" class="footer-clean">
         <footer>
             <div class="container footer-section">
                 <div class="row">
-                    <div class="col-md-3 col-sm-4 item">
+                    <div class="col-md-6 col-sm-4 item">
                         <h3><img src="assets/img/ys-orange-logo.png" id="logo"></h3>
                         <ul>
                             <li></li>
@@ -168,25 +176,24 @@
                             <li></li>
                         </ul>
                     </div>
-                    <div class="col-md-3 col-sm-4 item"></div>
                     <div class="col-md-3 col-sm-4 item">
                         <h3><strong>ADDRESS</strong> </h3>
                         <ul>
-                            <li><a href="#">123 Assakj Street #444 </a></li>
-                            <li><a href="#">San Francisci CA</a></li>
-                            <li><a href="#">94132 </a></li>
+                            <li>123 Assakj Street #444</li>
+                            <li>San Francisci CA</li>
+                            <li>94132</li>
                         </ul>
                     </div>
                     <div class="col-md-3 col-sm-4 item">
                         <h3><strong>CONTACT</strong> </h3>
                         <ul>
-                            <li><a href="#"> Tel: 415-123-1234 </a></li>
-                            <li><a href="#"> Mail: info@yummysearch.com </a></li>
+                            <li>Tel: 415-123-1234</li>
+                            <li>Mail: info@yummysearch.com</li>
                             <li class="social">
-                                <a href="#"> <img src="assets/img/facebook-icon.png"></a>
-                                <a href="#"><img src="assets/img/twitter-icon.png"></a>
-                                <a href="#"><img src="assets/img/instagram-icon.png"></a>
-                                <a href="#"><img src="assets/img/google-icon.png"></a>
+                                <!--<a href="">--> <img src="assets/img/facebook-icon.png"><!--</a>-->
+                                <!--<a href="">--><img src="assets/img/twitter-icon.png"><!--</a>-->
+                                <!--<a href="">--><img src="assets/img/instagram-icon.png"><!--</a>-->
+                                <!--<a href="">--><img src="assets/img/google-icon.png"><!--</a>-->
                             </li>
                         </ul>
                     </div>
@@ -201,6 +208,9 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/smooth-scroll-effect.js"></script>
+    <script src="assets/js/jump-top.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </body>
 
 </html>
